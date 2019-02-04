@@ -1026,7 +1026,7 @@ void json_value_free (json_value * value)
 
 int trailing_garbage (const json_char * ptr)
 {
-   json_char marker = * ptr;
+   json_char marker = *ptr;
    do {
       ptr--;
    } while (isspace(*ptr));
