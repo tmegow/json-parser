@@ -1056,14 +1056,14 @@ int trailing_garbage (const json_char * ptr)
       case 'l':
          if (*(--ptr) == 'l' && *(--ptr) == 'u' && *(--ptr) == 'n') {
             return 0;
+         } else {
+            return 1;
          }
-         return 1;
 
       default:
          if (isdigit(*ptr)) {
             return 0;
          } else {
-
             return 1;
          }
    }
