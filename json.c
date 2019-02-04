@@ -1051,7 +1051,7 @@ int trailing_garbage (const json_char * ptr)
             }
          }
 
-      return 1;
+         return 1;
 
       case 'l':
          if (*(--ptr) == 'l' && *(--ptr) == 'u' && *(--ptr) == 'n') {
