@@ -268,7 +268,6 @@ void json_value_free (json_value *);
 
 int trailing_garbage (const json_char *);
 
-
 /* Not usually necessary, unless you used a custom mem_alloc and now want to
  * use a custom mem_free.
  */
